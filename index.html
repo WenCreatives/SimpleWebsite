@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing things with a modern, fast, and beautiful website.">
+    <title>My Awesome Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header>
+        <div class="container">
+            <a href="#home" class="brand" aria-label="Homepage">
+                <span class="brand-mark">MW</span>
+                <span class="brand-text">My Website</span>
+            </a>
+            <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="site-nav" class="site-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <h2>Welcome to My Website</h2>
+                        <p>Discover amazing things with a clean, modern experience designed to impress.</p>
+                        <div class="actions">
+                            <a href="#services" class="btn">Get Started</a>
+                            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are a passionate team dedicated to creating awesome websites.</p>
+                <div class="features">
+                    <div class="feature card">
+                        <h3>Quality</h3>
+                        <p>We deliver high-quality products.</p>
+                    </div>
+                    <div class="feature card">
+                        <h3>Innovation</h3>
+                        <p>We embrace new technologies.</p>
+                    </div>
+                    <div class="feature card">
+                        <h3>Support</h3>
+                        <p>We provide excellent customer support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service card">
+                        <h3>Web Design</h3>
+                        <p>Beautiful, accessible interfaces that put users first.</p>
+                    </div>
+                    <div class="service card">
+                        <h3>Web Development</h3>
+                        <p>Fast, secure, and scalable sites built with best practices.</p>
+                    </div>
+                    <div class="service card">
+                        <h3>SEO Optimization</h3>
+                        <p>Technical and content SEO strategies to grow traffic.</p>
+                    </div>
+                    <div class="service card">
+                        <h3>Content Creation</h3>
+                        <p>Engaging content that connects with your audience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
